@@ -1,0 +1,409 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+    transition: all .3s ease-in-out;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+
+.post {
+    height: 730px;
+    width: 650px;
+
+    /* border: 2px solid red; */
+    
+    /* line bellow is important else if you give height or with value
+    in a nested element it will take the % of the outermost tag which is
+    positionally placed */
+    position: relative;
+    margin-top: .25rem;
+}
+
+.post-section {
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /* border: 2px solid red; */
+}
+
+
+
+
+.post-header {
+    height: 65px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.post-owner-logo {
+    height: 50px;
+    width: 50px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 .15rem;
+    /* background-color: rgba(128, 128, 128, 0.512); */
+    border-radius: .5rem;
+}
+.post-owner-stories {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 0, 150);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.post-owner-pic {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    border: 3px solid rgb(0, 0, 0);
+    background: url(./../images/blank-dp.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.post-owner-place {
+    height: 100%;
+    max-width: 400px;
+    /* border: 2px solid red; */
+    /* background-color: rgba(128, 128, 128, 0.555); */
+}
+/* .post-owner-line-1 {
+    height: 50%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    margin-top: .25rem;
+    background-color: grey;
+} */
+.post-owner-line-1 {
+    height: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.post-owner-idname {
+    padding: 0.15rem .25rem;
+    color: rgba(255, 255, 255, 0.808);
+    cursor: pointer;
+}
+.post-owner-id-verified {
+    height: 20px;
+    width: 20px;
+    background-color: rgba(128, 128, 128, 0.479);
+    background: url(./../images/verified.png);
+    
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+.post-time {
+    padding: 0.15rem .25rem;
+    color: rgba(255, 255, 255, 0.608);
+}
+.follow-post-owner {
+    padding: 0.15rem .25rem;
+    color: rgba(28, 62, 255, 0.87);
+    cursor: pointer;
+}
+.follow-post-owner:hover{
+    color: rgba(255, 255, 255, 0.685);
+}
+.dot {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: rgb(165, 165, 165);
+    margin: .25rem;
+}
+
+.post-more-options {
+    height: 35px;
+    width: 35px;
+    /* background-color: gray; */
+    position: absolute;
+    right: 10px;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+.more-options-dots {
+    margin: 0;
+    background-color: white;
+
+}
+/* .post-owner-line-2 {
+    background-color: rgba(0, 128, 0, 0.418);
+    height: 40%;
+    max-width: 400px;
+    overflow: hidden;
+} */
+
+
+
+
+
+.post-main {
+    width: 100%;
+    aspect-ratio: 1;
+
+    /* margin-top: .5rem; */
+
+    /* background-color: grey; */
+    border-radius: 6px;
+    position: relative;
+}
+
+.post-images {
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    /* border: 2px solid red; */
+    background-color: rgba(128, 128, 128, 0.05);
+    position: relative;
+    overflow-x: scroll;
+    display: flex;
+}
+.post-image {
+    height: 100%;
+    min-width: 100%;
+    /* border: 2px solid red; */
+}
+
+
+.post-main-icons {
+    height: 24px;
+    width: 24px;
+    color: rgba(0, 0, 0, 0.541);
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border: 2px solid red; */
+
+    transform: translate(0, -50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.post-left-swipe {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 10px;
+}
+.post-right-swipe {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 10px;
+}
+.post-tagged {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: url(./../images/blank-dp.jpg);
+    filter: opacity(.65);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.post-volume {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+
+
+
+
+.post-footer {
+    height: calc(100% - 580px);
+    padding: .25rem 0;
+    /* background-color: grey; */
+}
+
+.post-action-icons {
+    height: 28px;
+    width: 100%;
+    /* background-color: rgb(39, 192, 34); */
+    position: relative;
+}
+
+.post-action-icon {
+    display: inline-block;
+    height: 100%;
+    aspect-ratio: 1;
+    background-color: grey;
+    margin-right: .75rem;
+    cursor: pointer;
+}
+.post-action-icon:hover {
+    filter: opacity(.7);
+}
+
+.post-action-icon-1 {
+    background: url(./../images/action/1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+.post-action-icon-2 {
+    background: url(./../images/action/2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+.post-action-icon-3 {
+    background: url(./../images/action/3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+.post-action-icon-4 {
+    background: url(./../images/action/4.png);
+    position: absolute;
+    right: 0;
+    margin-right: 0;
+}
+
+.post-action-icon {
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.post-likes {
+    width: 100%;
+    height: 1.4rem;
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.651);
+    padding-left: .1rem;
+    cursor: pointer;
+    /* background-color: grey; */
+}
+
+.post-title-detail {
+    height: 35px;
+    width: 100%;
+    margin-bottom: .5rem;
+    /* background-color: grey; */
+    /* overflow: hidden; */
+}
+
+
+.post-title {
+    height: 100%;
+    width: 100%;
+    padding: 0 .2rem;
+    overflow: hidden;
+    /* background-color: rebeccapurple; */
+}
+
+.post-owner-idname-it {
+    color: rgba(255, 255, 255, 0.85);
+    /* background-color: aqua; */
+    padding-right: .1rem;
+    font-size: 1rem;
+}
+
+.post-owner-id-verified-it {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    background-color: rgb(50, 255, 135);
+    background: url(./../images/verified.png);
+    
+    background-position: center;
+    background-size: 85%;
+    background-repeat: no-repeat;
+    margin: 0 .1rem;
+
+    position: relative;
+    top: 3px;
+}
+
+.post-title { 
+    color: rgba(255, 255, 255, 0.75);
+    overflow: hidden;
+    font-size: .95rem;
+    cursor: pointer;
+}
+
+.post-comments {
+    height: 48px;
+    width: 100%;
+    margin-top: .5rem;
+}
+
+.view-comments {
+    height: 20px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: .1rem;
+    padding-right: .1rem;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.add-comment {
+    height: 28px; 
+    width: 100%;
+    /* background-color: red; */
+    padding-right: .1rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+#user-comment {
+    height: 100%;
+    width: 100%;
+    padding: .25rem .5rem;
+    padding-left: 0;
+    
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 0.65);
+    background: none;
+    outline: none;
+    border: none;
+    resize: none;
+    cursor: pointer;
+    padding-left: .1rem;
+    /* border: 2px solid red; */
+}
+
+.add-emoji-comment {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-color: rebeccapurple;
+    position: absolute;
+    right: 0;
+    transform: translate(-50%, -170%);
+    background: url(./../images/emoji.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

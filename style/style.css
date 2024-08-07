@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    
+    background-color: black;
+    /* border: 2px solid red; */
+
+}
+
+
+.main-scroll {
+    width: 650px;
+    height: 3750px;
+
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-60%, 0);
+
+    display: flex;
+    flex-direction: column;
+
+    /* border: 2px solid red; */
+
+}
+
+/* #toggle {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+
+    padding: 2rem 4rem;
+    background-color: green;
+    color: white;
+}
+
+#toggle:active {
+    color: green;
+    background-color: white;
+    border: 2px solid green;
+} */

@@ -1,0 +1,27 @@
+.post-1 .post-owner-pic {
+    background: url(./../images/icons/profile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.post-1 .post-image-1 {
+    background: url(./../images/image1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.post-1 .post-image-2 {
+    background: url(./../images/image2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.post-1 .post-image-3 {
+    background: url(./../images/image3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

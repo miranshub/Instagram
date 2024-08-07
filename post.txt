@@ -1,0 +1,39 @@
+<section class="post post-1">
+    <div class="post-section">
+        <div class="post-header">
+            <div class="post-id-icon"></div>
+            <h3 class="post-id-name">name</h3>
+            <div class="dot"></div>
+            <div class="post-timestamp">10min</div>
+            <div class="post-more-info"></div>
+        </div>
+        <div class="post-main">
+            <div class="post-pics">
+                <div class="post-pic"></div>
+            </div>
+        </div>
+        <div class="post-footer">
+            <div class="post-actions">
+                <div class="post-action post-like"></div>
+                <div class="post-action post-comment"></div>
+                <div class="post-action post-share"></div>
+                <div class="post-action post-save"></div>
+            </div>
+            <div class="likes-count">1M likes</div>
+            <div class="caption">
+                <div class="account-name">Name</div>
+                <div class="caption-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatem quaerat debitis ut inventore.</div>
+            </div>
+            <div class="post-comment-actions">
+                <div class="post-view-comments"></div>
+                <div class="post-add-comment">
+                    <form action="">
+                        <label for="user-comment-1">comment</label>
+                        <textarea name="comment" id="user-comment-1" cols="50" rows="1"></textarea>
+                    </form>
+                    <div class="comment-emoji"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
