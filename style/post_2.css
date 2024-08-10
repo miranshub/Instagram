@@ -1,0 +1,48 @@
+.post-owner-pic {
+    background: url(./../images/icons/profile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.post-image-2-1 {
+    background: url(./../images/post_2/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.post-image-2-2 {
+    background: url(./../images/post_2/2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.post-image-2-3 {
+    background: url(./../images/post_2/3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.post-image-2-4 {
+    background: url(./../images/post_2/4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.post-image-2-5 {
+    background: url(./../images/post_2/5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.post-image-2-6 {
+    background: url(./../images/post_2/6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
